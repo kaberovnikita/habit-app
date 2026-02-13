@@ -1,0 +1,23 @@
+:root {
+    --background-primary-button: #edecfe;
+    --color-text-primary-button: #5051f9;
+
+    --font-s-13: 13px;
+    --font-w-500: 500;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+button {
+    border: none;
+}
