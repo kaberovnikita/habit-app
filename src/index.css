@@ -1,6 +1,8 @@
 :root {
     --background-primary-button: #edecfe;
-    --color-text-primary-button: #5051f9;
+    --color-blue-primary: #5051f9;
+    --color-blue-primary-hover: #6A6AFB;
+    --color-white-primary: #ffffff;
 
     --font-s-13: 13px;
     --font-w-500: 500;
@@ -16,6 +18,7 @@ body {
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    background: gray;
 }
 
 button {

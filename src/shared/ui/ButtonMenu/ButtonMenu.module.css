@@ -1,0 +1,22 @@
+.button {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white-primary);
+    border-radius: 14px;
+    cursor: pointer;
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.15s ease;
+}
+
+.button:hover {
+    background-color: var(--color-blue-primary-hover);
+}
+
+.button.active {
+    background: var(--color-blue-primary);
+}

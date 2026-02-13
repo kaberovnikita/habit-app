@@ -3,10 +3,12 @@
     height: 39px;
     border-radius: 9px;
     background-color: var(--background-primary-button);
-    color: var(--color-text-primary-button);
+    color: var(--color-blue-primary);
+    font-family: "Comfortaa", sans-serif;
     font-size: var(--font-s-13);
     font-weight: var(--font-w-500);
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
