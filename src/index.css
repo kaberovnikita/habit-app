@@ -4,11 +4,17 @@
     --background-menu: #FBFAFF;
     --color-blue-primary: #5051f9;
     --color-black-primary: #000000;
+    --color-gray-primary: #8899a8;
+    --color-gray-secondary: #768396;
     --color-blue-primary-hover: #6A6AFB;
     --color-white-primary: #ffffff;
+    --color-blue-border-secondary: #CAD5FF;
+    --color-gray-border-input: #E7EBFB;
 
     --font-s-13: 13px;
+    --font-s-14: 14px;
     --font-s-18: 18px;
+    --font-s-24: 24px;
 
     --font-w-500: 500;
     --font-w-700: 700;
@@ -29,5 +35,11 @@ body {
 }
 
 button {
+    background: none;
+    border: none;
+}
+
+input {
+    outline: none;
     border: none;
 }
