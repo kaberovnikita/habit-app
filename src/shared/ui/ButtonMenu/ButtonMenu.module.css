@@ -18,5 +18,5 @@
 }
 
 .button.active {
-    background: var(--color-blue-primary);
+    background-color: var(--color-blue-primary);
 }

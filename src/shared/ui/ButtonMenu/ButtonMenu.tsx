@@ -2,30 +2,25 @@ import type { IButtonMenuProps } from "./ButtonMenu.props";
 import styles from "./ButtonMenu.module.css";
 import { useState } from "react";
 import { colors } from "../../lib/consts/colors";
+import { NavLink, type NavLinkRenderProps } from "react-router-dom";
 
-function ButtonMenu({ children }: IButtonMenuProps) {
-    const [isActive, setActive] = useState<boolean>(false)
-    const [isHover, setHover] = useState<boolean>(false)
-
-    let color = colors.blue
-    switch (true) {
-        case isActive:
-            color = colors.white
-            break
-        case isHover:
-            color = colors.white
-            break
-    }
-
+function ButtonMenu({ children, to }: IButtonMenuProps) {
     return (
-        <button
-            className={`${styles.button} ${isActive ? styles.active : ''}`}
-            onClick={() => setActive(prev => !prev)}
-            onMouseEnter={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}
-        >
-            {children(color)}
-        </button>
+        <NavLink to={to}>
+            {({ isActive }: NavLinkRenderProps) => {
+                const [isHover, setHover] = useState(false);
+                let color = isActive || isHover ? colors.white : colors.blue;
+                return (
+                    <button
+                        className={`${styles.button} ${isActive ? styles.active : ''}`}
+                        onMouseEnter={() => setHover(true)}
+                        onMouseLeave={() => setHover(false)}
+                    >
+                        {children(color)}
+                    </button>
+                )
+            }}
+        </NavLink>
     )
 }
 

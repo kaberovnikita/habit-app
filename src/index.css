@@ -1,11 +1,17 @@
 :root {
+    --background: #F3F6FD;
     --background-primary-button: #edecfe;
+    --background-menu: #FBFAFF;
     --color-blue-primary: #5051f9;
+    --color-black-primary: #000000;
     --color-blue-primary-hover: #6A6AFB;
     --color-white-primary: #ffffff;
 
     --font-s-13: 13px;
+    --font-s-18: 18px;
+
     --font-w-500: 500;
+    --font-w-700: 700;
 }
 
 * {
@@ -14,11 +20,12 @@
     padding: 0;
 }
 
+
 body {
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background: gray;
+    background-color: var(--background);
 }
 
 button {
