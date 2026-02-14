@@ -3,7 +3,7 @@ import styles from "./IconFood.module.css";
 
 function IconFood({ color }: IIconFood) {
     return (
-        <div className={styles.icon} style={{ color }}>
+        <div role="img" aria-label="Питание" className={styles.icon} style={{ color }}>
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.5 10.6015V11.0808C0.499915 13.0626 1.03407 15.0078 2.04624 16.7116C3.05842 18.4154 4.51118 19.8149 6.25164 20.7627V22.1047H15.8377V20.7627C17.5782 19.8149 19.0309 18.4154 20.0431 16.7116C21.0553 15.0078 21.5894 13.0626 21.5893 11.0808V10.6015H0.5Z" stroke="currentColor" stroke-miterlimit="10" />
                 <path d="M18.4318 6.22787L21.8109 1.62656" stroke="currentColor" stroke-miterlimit="10" />

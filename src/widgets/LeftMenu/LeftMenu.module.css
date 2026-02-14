@@ -22,6 +22,7 @@
 .logo__image {
     width: 44px;
     height: 44px;
+    cursor: pointer;
 }
 
 .sidebar__header {
@@ -35,6 +36,14 @@
     flex-direction: column;
     align-items: center;
     gap: 25px;
+}
+
+.menu__buttonAdd {
+    width: 46px;
+    height: 46px;
+    border: 1px solid var(--color-blue-border-secondary);
+    border-radius: 14px;
+    cursor: pointer;
 }
 
 .layout__content {

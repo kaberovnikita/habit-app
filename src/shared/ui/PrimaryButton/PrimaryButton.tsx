@@ -3,7 +3,7 @@ import styles from "./PrimaryButton.module.css";
 
 function PrimaryButton({ text, ...props }: IPrimaryButtonProps) {
     return (
-        <button {...props} className={styles.button}>{text}</button>
+        <button className={styles.button} {...props}>{text}</button>
     )
 }
 

@@ -1,10 +1,9 @@
 import styles from './IconSport.module.css';
 import type { IIconSport } from './IconSport.props';
 
-
 function IconSport({ color }: IIconSport) {
     return (
-        <div className={styles.icon} style={{ color }}>
+        <div role="img" aria-label="Спорт" className={styles.icon} style={{ color }}>
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13 20.9021C13 20.5115 12.8448 20.1365 12.5688 19.8604L3.01458 10.3062C2.73854 10.0302 2.36354 9.875 1.97292 9.875C1.15937 9.875 0.5 10.5344 0.5 11.3479C0.5 11.7385 0.655208 12.1135 0.93125 12.3896L10.4849 21.9432C10.7609 22.2193 11.1359 22.3745 11.5266 22.3745C12.3406 22.375 13 21.7156 13 20.9021Z" stroke="currentColor" stroke-miterlimit="10" />
                 <path d="M3.01458 14.4729C2.73854 14.1969 2.36354 14.0417 1.97292 14.0417C1.15938 14.0417 0.5 14.701 0.5 15.5146C0.5 15.9052 0.655208 16.2802 0.93125 16.5562L6.31823 21.9432C6.59427 22.2193 6.96927 22.3745 7.3599 22.3745C8.17396 22.375 8.83333 21.7156 8.83333 20.9021C8.83333 20.5115 8.67813 20.1365 8.40208 19.8604" stroke="currentColor" stroke-miterlimit="10" />

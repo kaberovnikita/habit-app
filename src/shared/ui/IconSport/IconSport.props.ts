@@ -1,3 +1,3 @@
 export interface IIconSport {
-    color?: string
+    color: string
 }

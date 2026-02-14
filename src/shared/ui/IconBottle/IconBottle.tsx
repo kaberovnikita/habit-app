@@ -3,7 +3,7 @@ import styles from "./IconBottle.module.css";
 
 function IconBottle({ color }: IIconBottle) {
     return (
-        <div className={styles.icon} style={{ color }}>
+        <div role="img" aria-label="Вода" className={styles.icon} style={{ color }}>
             <svg width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.9167 10.3959H1.54168" stroke="currentColor" stroke-miterlimit="10" />
                 <path d="M1.54168 18.2084H10.9167" stroke="currentColor" stroke-miterlimit="10" />

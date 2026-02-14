@@ -10,6 +10,7 @@ function ButtonMenu({ children, to }: IButtonMenuProps) {
             {({ isActive }: NavLinkRenderProps) => {
                 const [isHover, setHover] = useState(false);
                 let color = isActive || isHover ? colors.white : colors.blue;
+
                 return (
                     <button
                         className={`${styles.button} ${isActive ? styles.active : ''}`}
