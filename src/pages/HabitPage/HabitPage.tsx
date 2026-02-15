@@ -1,6 +1,8 @@
 import { useNavigate, useParams } from "react-router-dom"
 import { useHabitsStore } from "../../entities/habit/model/store"
 import { useEffect } from "react";
+import styles from './HabitPage.module.css';
+import TaskCard from "../../features/add-task/ui/TaskCard";
 
 function HabitPage() {
     const navigate = useNavigate();
@@ -19,7 +21,17 @@ function HabitPage() {
         return null
     }
 
-    return <h1>{habit.title}</h1>;
+    return (
+        <div className={styles.page}>
+            <div className={styles.page__header_content}>
+                <h1 className={styles.page__header_content_title}>{habit.title}</h1>
+                <div>Прогресс бар</div>
+            </div>
+            <div className={styles.page__tasks}>
+                <TaskCard />
+            </div>
+        </div>
+    );
 }
 
 export default HabitPage

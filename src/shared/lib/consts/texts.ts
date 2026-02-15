@@ -5,4 +5,5 @@ export const texts = {
     icon: "Иконка",
     title: "Название",
     target: "Цель",
+    comment: "Комментарий",
 } as const;

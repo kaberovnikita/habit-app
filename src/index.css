@@ -2,6 +2,7 @@
     --background: #F3F6FD;
     --background-primary-button: #edecfe;
     --background-menu: #FBFAFF;
+    --color-white-border: #E7EBFB;
     --color-blue-primary: #5051f9;
     --color-black-primary: #000000;
     --color-gray-primary: #8899a8;
@@ -15,6 +16,7 @@
     --font-s-14: 14px;
     --font-s-18: 18px;
     --font-s-24: 24px;
+    --font-s-30: 30px;
 
     --font-w-500: 500;
     --font-w-700: 700;

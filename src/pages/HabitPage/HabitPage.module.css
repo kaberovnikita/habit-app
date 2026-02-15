@@ -1,0 +1,18 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.page__header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page__header_content_title {
+    font-size: var(--font-s-30);
+    color: var(--color-black-primary);
+}
+
+.page__tasks {}
