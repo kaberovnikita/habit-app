@@ -1,4 +1,4 @@
-import { useHabitsStore } from "../../entities/habit/model/store"
+import { useHabitsStore } from "../../entities/habit/store/store"
 
 function MainPage() {
     const habits = useHabitsStore((state) => state.items)

@@ -8,7 +8,7 @@ import IconSport from '../../shared/ui/IconSport/IconSport';
 import IconBottle from '../../shared/ui/IconBottle/IconBottle';
 import IconFood from '../../shared/ui/IconFood/IconFood';
 import { useState, type SyntheticEvent } from 'react';
-import { useHabitsStore } from '../../entities/habit/model/store';
+import { useHabitsStore } from '../../entities/habit/store/store';
 import { useNavigate } from 'react-router-dom';
 
 function Modal() {
@@ -25,17 +25,18 @@ function Modal() {
         return null
     }
 
-    function handleSubmit(event: SyntheticEvent): void {
+    const handleSubmit = (event: SyntheticEvent) => {
         event.preventDefault()
-        if (!title || !target || !icon) {
+        if (!title.trim() || !target.trim() || !icon) {
             return;
         }
 
         const habit = {
             id: crypto.randomUUID(),
             title: title,
-            target: target,
+            target: Number(target),
             icon: icon,
+            tasks: [],
         }
 
         addHabit(habit)

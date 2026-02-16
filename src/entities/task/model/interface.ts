@@ -3,9 +3,3 @@ export interface Task {
     comment: string
 }
 
-export interface TaskStore {
-    items: Task[]
-    addTask: (item: Task) => void
-    removeTask: (id: string) => void
-}
-
