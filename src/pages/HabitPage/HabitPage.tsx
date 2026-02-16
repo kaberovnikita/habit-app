@@ -2,7 +2,7 @@ import { useNavigate, useParams } from "react-router-dom"
 import { useHabitsStore } from "../../entities/habit/model/store"
 import { useEffect } from "react";
 import styles from './HabitPage.module.css';
-import TaskCard from "../../features/add-task/ui/TaskCard";
+import TaskCard from "../../features/task/TaskCard";
 
 function HabitPage() {
     const navigate = useNavigate();

@@ -3,12 +3,11 @@ import type { TaskStore } from "./interface";
 
 export const useTaskStore = create<TaskStore>((set, get) => ({
     items: [],
-    currentDay: 1,
+    index: 0,
     addTask: ((item) => {
-        const { currentDay, items } = get()
+        const { items } = get()
         set({
-            items: [...items, item],
-            currentDay: currentDay + 1
+            items: [...items, item]
         })
     }),
     removeTask: ((id) => {

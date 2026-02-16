@@ -5,7 +5,7 @@ import Logomark from '..//../assets/Logomark.svg';
 import AddIcon from '..//../assets/add.svg';
 import { useHabitsStore } from "../../entities/habit/model/store"
 import { iconComponents } from "../../shared/lib/consts/icons"
-import Modal from "../../features/add-habit/ui/Modal";
+import Modal from "../../features/habit/Modal";
 
 function LeftMenu() {
     const openModal = useHabitsStore(

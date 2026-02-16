@@ -1,14 +1,14 @@
 import styles from './Modal.module.css';
-import closeIcon from '..//..//../assets/cross.svg';
-import Input from '../../../shared/ui/Input/Input';
-import { texts } from '../../../shared/lib/consts/texts';
-import PrimaryButton from '../../../shared/ui/PrimaryButton/PrimaryButton';
-import ButtonIconNewHabit from '../../../shared/ui/ButtonIconNewHabit/ButtonIconNewHabit';
-import IconSport from '../../../shared/ui/IconSport/IconSport';
-import IconBottle from '../../../shared/ui/IconBottle/IconBottle';
-import IconFood from '../../../shared/ui/IconFood/IconFood';
+import closeIcon from '..//../assets/cross.svg'
+import Input from '../../shared/ui/Input/Input';
+import { texts } from '../../shared/lib/consts/texts';
+import PrimaryButton from '../../shared/ui/PrimaryButton/PrimaryButton';
+import ButtonIconNewHabit from '../../shared/ui/ButtonIconNewHabit/ButtonIconNewHabit';
+import IconSport from '../../shared/ui/IconSport/IconSport';
+import IconBottle from '../../shared/ui/IconBottle/IconBottle';
+import IconFood from '../../shared/ui/IconFood/IconFood';
 import { useState, type SyntheticEvent } from 'react';
-import { useHabitsStore } from '../../../entities/habit/model/store';
+import { useHabitsStore } from '../../entities/habit/model/store';
 import { useNavigate } from 'react-router-dom';
 
 function Modal() {
