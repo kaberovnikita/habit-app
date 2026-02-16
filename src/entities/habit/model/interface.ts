@@ -11,7 +11,7 @@ export interface Habit {
 export interface HabitStore {
     items: Habit[];
     modalIsOpen: boolean;
-    addHabit: (item: Habit) => void;
+    addHabit: (item: Habit) => boolean;
     addTaskToHabit: (habitID: string, task: Task) => void
     removeTaskFromHabit: (habitID: string, taskID: string) => void
     openModal: () => void;

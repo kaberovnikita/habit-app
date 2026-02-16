@@ -16,19 +16,16 @@ function HabitPage() {
     }
 
     const progress = Math.round((habit.tasks.length / Number(habit.target)) * 100)
-
     return (
         <div className={styles.page}>
             <div className={styles.page__header_content}>
                 <h1 className={styles.page__header_content_title}>{habit.title}</h1>
-                <div>
-                    <h2>Прогресс</h2>
-                    <div>{progress}%</div>
+                <div className={styles.page__header__wrapper}>
+                    <h2 className={styles.wrapper__title}>Прогресс</h2>
+                    <div className={styles.wrapper__percent}>{progress}%</div>
                 </div>
             </div>
-            <div className={styles.page__tasks}>
-                <TaskCard habitID={id} />
-            </div>
+            <TaskCard habitID={id} />
         </div>
     );
 }

@@ -15,4 +15,18 @@
     color: var(--color-black-primary);
 }
 
-.page__tasks {}
+.page__header__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 127px;
+}
+
+.wrapper__title {
+    font-size: var(--font-s-14);
+    color: var(--color-black-primary);
+}
+
+.wrapper__percent {
+    font-size: var(--font-s-14);
+    color: var(--color-gray-primary);
+}

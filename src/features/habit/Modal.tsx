@@ -17,18 +17,19 @@ function Modal() {
     const [title, setTitle] = useState("")
     const [target, setTarget] = useState("")
 
-    const isOpen = useHabitsStore((state) => state.modalIsOpen)
-    const close = useHabitsStore((state) => state.closeModal)
-    const addHabit = useHabitsStore((state) => state.addHabit)
-
-    if (!isOpen) {
-        return null
+    const { closeModal, addHabit, modalIsOpen } = useHabitsStore()
+    if (!modalIsOpen) {
+        return
     }
 
     const handleSubmit = (event: SyntheticEvent) => {
         event.preventDefault()
         if (!title.trim() || !target.trim() || !icon) {
             return;
+        }
+
+        if (isNaN(Number(target))) {
+            return
         }
 
         const habit = {
@@ -39,18 +40,21 @@ function Modal() {
             tasks: [],
         }
 
-        addHabit(habit)
-        setTitle("")
-        setTarget("")
-        setIcon(null)
-        close()
-        navigate(`/habits/${habit.id}`)
+        const success = addHabit(habit)
+        if (success) {
+            closeModal()
+            setTitle("")
+            setTarget("")
+            setIcon(null)
+            navigate(`/habits/${habit.id}`)
+        }
     }
 
     return (
+
         <div className={styles.overlay}>
             <form className={styles.modal} onSubmit={handleSubmit}>
-                <button type='button' onClick={close} className={styles.modal__close}>
+                <button type='button' onClick={closeModal} className={styles.modal__close}>
                     <img src={closeIcon} alt="Закрыть" />
                 </button>
                 <div className={styles.modal__titles}>
